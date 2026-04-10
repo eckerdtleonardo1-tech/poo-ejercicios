@@ -8,7 +8,9 @@ class Auto {
     acelerar(){
         this.velocidad += 10;
     }
-
+    frenodmano(){
+        this.velocidad = 0;
+    }
 }
 
 
@@ -18,3 +20,5 @@ const auto3 = new Auto("toyota", "etios");
 
 auto1.acelerar();
 console.log("La velocidad del coche 1 es " + auto1.velocidad);
+auto1.frenodmano();
+console.log("frenaste de golpe");
